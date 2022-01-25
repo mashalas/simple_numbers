@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <title>simple numbers</title>
+  <script src="simple_numbers.js"></script>
+</head>
+
+</head>
+
+<body>
+<form>
+<table border="1">
+  <tr>
+    <td>Target numbers count:</td>
+    <td><input type="text" id="target_numbers_count" value="100000" /></td>
+  </tr>
+  <tr>
+    <td><label for="need_to_print">Display found numbers<label></td>
+    <td>
+      <input type="checkbox" id="need_to_print"/>
+      </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <div align="center">
+        <input type="button" value="calc" onClick="processUserData();" />
+      </div>
+    </td>
+  <tr>
+</table>
+<p>
+  Duration: <input type="text" id="duration" /> seconds.
+</p>
+<p id="numbers_list" ></p>
+
+</body>
+</html>
