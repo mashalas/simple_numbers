@@ -10,7 +10,7 @@ my $RETCODE__WRONG_AMOUNT_OF_SIMPLE_NUMBERS = 2;
 sub help()
 {
   print <<EOF
-simple_numbers.pl [-h--help] [-p|--print[=filename] <count>
+simple_numbers.pl [-h--help] [-p|--print[=filename]] <count>
   -h, --help             show this help and quit
   -p, --print            print found simple numbers to \"filename\" if specified or to STDOUT if no
   count                  target amount of simple numbers
@@ -71,7 +71,7 @@ my ($some_number, $simple);
       push(@{$ref__numbers_list}, $some_number);
     }
   }
-  return ${$ref__numbers_list}[0];
+  return ${$ref__numbers_list}[$#{$ref__numbers_list}];
 }
 
 sub init_default_params  #($\%)
